@@ -73,6 +73,19 @@
         a {
             color: #6a965f;
         }
+               .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .image-row img {
+            width: 32%;
+            margin-bottom: 10px;
+        }
+        /* Это для того, чтобы первые изображения оставались на 50% */
+        .image-large {
+            width: 50%;
+        }
     </style>
 </head>
 <body>
@@ -135,8 +148,16 @@
         </div>
 
         <h2>Примеры работы</h2>
-        <img src="https://github.com/zyf2021/wineyard.github.io/blob/main/image1.png?raw=true" alt="Пример работы 56564" style="width:100%;height:auto;">
-        <img src="your_image_2.jpg" alt="Пример работы 2" style="width:100%;height:auto;">
+        <div class="image-row">
+            <img src="image1.png" alt="Пример работы 1" style="width:50%;height:auto;">
+            <img src="image2.png" alt="Пример работы 2" style="width:50%;height:auto;">
+        </div>
+        <!-- Контейнер для последних 3 изображений -->
+        <div class="image-row">
+            <img src="image3.png" alt="Пример работы 3">
+            <img src="image4.png" alt="Пример работы 4">
+            <img src="image5.png" alt="Пример работы 5">
+        </div>
         
         <h2 id="support">Поддержка</h2>
         <p>Проект был поддержан <a href="https://fasie.ru">Фондом Содействия Инновациям</a>. Это подтверждает его важность для развития сельского хозяйства и инновационных технологий в России. Мы гордимся, что наш стартап способствует внедрению современных решений в аграрный сектор, помогая повысить производительность и эффективность виноградарства.</p>
